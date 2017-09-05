@@ -6,6 +6,8 @@ import java.util.Random;
 public class Entry {
     private Day day;
     private String note;
+    private int duration;
+
 
     public Entry(Day day, String note) {
         this.day = day;
@@ -20,11 +22,20 @@ public class Entry {
         return note;
     }
 
+    public int getDuration() {
+        return duration;
+    }
+
+    public void setDuration(int duration) {
+        this.duration = duration;
+    }
+
     @Override
     public String toString() {
         return "Entry{" +
                 "day=" + day +
                 ", note='" + note + '\'' +
+                "duration=" + duration +
                 '}';
     }
 
